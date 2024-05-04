@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ID>1d8e8b95-ba50-47af-9ff6-78df5d34b2f6</ID>
+  <Name>[Tsunamods] The Test Room</Name>
+  <Category>Gameplay</Category>
+  <Author>Tsunamods</Author>
+  <Version>0.01</Version>
+  <Description>
+    A Debug room mod for modders needing to test core engine functionalities.
+    Originally part of Shinra Archaeology Cut, this debug section has become a fully functional mode of it own in time.
+    Thanks to Odysseus and Satsuki_Yatoshi for the original work on this part and for allowing this mod to exist.
+
+    See the mod link for more information.
+  </Description>
+  <ReleaseNotes></ReleaseNotes>
+  <ReleaseDate>2024-05-05</ReleaseDate>
+  <Link>https://github.com/tsunamods-codes/the-test-room</Link>
+  <DonationLink></DonationLink>
+  <FFNxConfig>
+  </FFNxConfig>
+  <Variables />
+  <Compatibility/>
+</ModInfo>
