@@ -28,4 +28,5 @@ foreach($file in Get-ChildItem -Path .\src\*.xml –Recurse)
 
 # Start the packaging
 mkdir .dist\ | Out-Null
-7z a -tzip ".\.dist\${env:_RELEASE_NAME}-${env:_RELEASE_VERSION}.zip" ".\src\*" LICENSE
+Copy-Item LICENSE .\src
+iroga pack .\src --output ".\.dist\${env:_RELEASE_NAME}-${env:_RELEASE_VERSION}.iro"

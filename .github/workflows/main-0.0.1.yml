@@ -34,6 +34,11 @@ jobs:
         git config --global core.autocrlf false
         git config --global core.filemode false
         git config --global core.longpaths true
+    - name: Install iroga from crates.io
+      uses: baptiste0928/cargo-install@v3
+      with:
+        crate: iroga
+        version: 0.1.2
     - name: Checkout
       uses: actions/checkout@v4.1.0
     - name: Prepare Env
@@ -43,7 +48,7 @@ jobs:
       uses: ncipollo/release-action@v1
       if: env._IS_GITHUB_RELEASE == 'true' && env._IS_BUILD_CANARY == 'true' && success()
       with:
-        artifacts: ".dist/*.zip"
+        artifacts: ".dist/*.iro"
         allowUpdates: true
         generateReleaseNotes: true
         prerelease: true
@@ -56,7 +61,7 @@ jobs:
       uses: ncipollo/release-action@v1
       if: env._IS_GITHUB_RELEASE == 'true' && env._IS_BUILD_CANARY == 'false' && success()
       with:
-        artifacts: ".dist/*.zip"
+        artifacts: ".dist/*.iro"
         generateReleaseNotes: true
         makeLatest: true
         removeArtifacts: true
