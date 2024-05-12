@@ -17,12 +17,18 @@ Write-Output "_RELEASE_VERSION=${env:_RELEASE_VERSION}" >> ${env:GITHUB_ENV}
 Write-Output "_IS_BUILD_CANARY=${env:_IS_BUILD_CANARY}" >> ${env:GITHUB_ENV}
 Write-Output "_IS_GITHUB_RELEASE=${env:_IS_GITHUB_RELEASE}" >> ${env:GITHUB_ENV}
 
-# Lint all XML files
-foreach($file in Get-ChildItem -Path .\src\*.xml –Recurse)
-{
-  Write-Output "Linting $file..."
-  xmllint $file
-}
+$modXmlPath = ".\src\mod.xml"
+
+# Lint XML file
+Write-Output "Linting $modXmlPath..."
+xmllint $modXmlPath
+
+# Update Mod version
+$modVersion = $env:_BUILD_VERSION
+[regex]$pattern = "\."
+$modVersion = $pattern.replace($modVersion, ",", 1)
+$modVersion = $modVersion.Replace('.', '')
+(Get-Content $modXmlPath).Replace('${MOD_VERSION}', $modVersion) | Set-Content $modXmlPath
 
 # Start the packaging
 mkdir .dist\ | Out-Null

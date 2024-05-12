@@ -4,7 +4,7 @@
   <Name>[Tsunamods] The Test Room</Name>
   <Category>Gameplay</Category>
   <Author>Tsunamods</Author>
-  <Version>0.01</Version>
+  <Version>${MOD_VERSION}</Version>
   <Description>
     A Debug room mod for modders needing to test core engine functionalities.
     Originally part of Shinra Archaeology Cut, this debug section has become a fully functional mode of it own in time.
