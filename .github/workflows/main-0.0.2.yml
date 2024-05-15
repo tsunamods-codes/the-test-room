@@ -1,6 +1,6 @@
 name: TheTestRoom
 
-run-name: 0.0.1.${{ github.run_number }}
+run-name: 0.0.2.${{ github.run_number }}
 
 on:
   push:
@@ -18,7 +18,7 @@ env:
   _RELEASE_NAME: TheTestRoom
   _RELEASE_VERSION: v0
   _BUILD_BRANCH: "${{ github.ref }}"
-  _BUILD_VERSION: "0.0.1.${{ github.run_number }}"
+  _BUILD_VERSION: "0.0.2.${{ github.run_number }}"
   # GIT: Fix reporting from stderr to stdout
   GIT_REDIRECT_STDERR: 2>&1
 
