@@ -39,12 +39,12 @@ jobs:
       with:
         crate: iroga
         version: 0.1.2
-    - name: Install iroga from crates.io
+    - name: Install xmlint
       uses: baptiste0928/cargo-install@v3
       with:
         crate: xmllint
-        git: https://github.com/typomedia/xmllint
-        tag: v1.0.0
+        git: https://github.com/dotaxis/xmllint
+        commit: c28b413d3f9c73a3a343523e9a806962b56b1d1d
     - name: Checkout
       uses: actions/checkout@v4.1.0
     - name: Prepare Env

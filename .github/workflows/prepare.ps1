@@ -21,7 +21,7 @@ $modXmlPath = ".\src\mod.xml"
 
 # Lint XML file
 Write-Output "Linting $modXmlPath..."
-xmllint $modXmlPath
+xmllint --noout $modXmlPath
 
 # Update Mod version
 $modVersion = $env:_BUILD_VERSION
