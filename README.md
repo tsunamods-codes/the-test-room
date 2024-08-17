@@ -2,7 +2,7 @@
 
 # The Test Room
 
-A FF7 Debug room mod for modders needing to test core engine functionalities
+A FF7 Debug room mod for modders needing to test core engine functionalities.
 
 # Features
 
@@ -10,6 +10,8 @@ A FF7 Debug room mod for modders needing to test core engine functionalities
 - Test overlapping textboxes ( by Odysseus )
 - Test keyboard to controller icon replacement ( by Odysseus )
 - Quick access to any battle scene ( by Satsuki_Yatoshi )
+- Test textbox layering when text is scrolling in textbox ( by Odysseus )
+- Test textbox layering when timer is placed in box ( by Odysseus )
 
 # How to use
 
