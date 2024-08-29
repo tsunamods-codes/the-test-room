@@ -12,6 +12,7 @@ A FF7 Debug room mod for modders needing to test core engine functionalities.
 - Quick access to any battle scene ( by Satsuki_Yatoshi )
 - Test textbox layering when text is scrolling in textbox ( by Odysseus )
 - Test textbox layering when timer is placed in box ( by Odysseus )
+- Test FFNx's mouth replacement system ( by Odysseus )
 
 # How to use
 
