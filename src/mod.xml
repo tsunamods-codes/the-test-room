@@ -17,6 +17,7 @@
   <Link>https://github.com/tsunamods-codes/the-test-room</Link>
   <DonationLink></DonationLink>
   <FFNxConfig>
+    <ff7_advanced_blinking>true</ff7_advanced_blinking>
   </FFNxConfig>
   <Variables />
   <Compatibility/>
