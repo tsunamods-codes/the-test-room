@@ -13,6 +13,7 @@ A FF7 Debug room mod for modders needing to test core engine functionalities.
 - Test textbox layering when text is scrolling in textbox ( by Odysseus )
 - Test textbox layering when timer is placed in box ( by Odysseus )
 - Test FFNx's mouth replacement system ( by Odysseus )
+- Test controller icons from PSX button commands ( by Odysseus )
 
 # How to use
 
