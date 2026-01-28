@@ -16,6 +16,7 @@ A FF7 Debug room mod for modders needing to test core engine functionalities.
 - Test controller icons from PSX button commands ( by Odysseus )
 - Test audio looping ( by Odysseus )
 - Test game credits ( by Odysseus )
+- Test FFVII Lighting Effects ( by Odysseus )
 
 # How to use
 
